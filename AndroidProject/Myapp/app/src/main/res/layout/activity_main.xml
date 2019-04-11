@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="48dp"
+        android:text="Addition of 2 numbers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="76dp"
+        android:onClick="btnClick"
+        android:text="ADD"
+        app:layout_constraintStart_toStartOf="@+id/lbl2"
+        app:layout_constraintTop_toBottomOf="@+id/txtSecondNumber" />
+
+    <EditText
+        android:id="@+id/txtFirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/lbl1"
+        app:layout_constraintTop_toTopOf="@+id/lbl1" />
+
+    <EditText
+        android:id="@+id/txtSecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/txtFirstNumber"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtFirstNumber"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstNumber"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lbl2"
+        android:layout_width="135dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="72dp"
+        android:text="2nd Number:"
+        app:layout_constraintEnd_toEndOf="@+id/lbl1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lbl1"
+        app:layout_constraintTop_toBottomOf="@+id/lbl1" />
+
+    <TextView
+        android:id="@+id/lbl1"
+        android:layout_width="131dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="96dp"
+        android:text="1st Number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/lbl3"
+        android:layout_width="216dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Result :"
+        app:layout_constraintEnd_toEndOf="@+id/div"
+        app:layout_constraintStart_toStartOf="@+id/Add"
+        app:layout_constraintTop_toBottomOf="@+id/Add" />
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="76dp"
+        android:onClick="btnClick1"
+        android:text="Multiply"
+        app:layout_constraintStart_toEndOf="@+id/Add"
+        app:layout_constraintTop_toBottomOf="@+id/txtSecondNumber" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="76dp"
+        android:onClick="btnClick2"
+        android:text="divide"
+        app:layout_constraintEnd_toEndOf="@+id/txtSecondNumber"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/multi"
+        app:layout_constraintTop_toBottomOf="@+id/txtSecondNumber" />
+
+</android.support.constraint.ConstraintLayout>
